@@ -1,0 +1,23 @@
+.menu {
+	display: flex;
+    margin: 25px;
+    width: 725px;
+    background-color: rgb(22, 161, 119);
+    
+}
+.menu a {
+	/* margin-right: 10px; */
+	padding: 14px;
+    padding-right: 40px;
+    padding-left: 40px;
+	font: 17px Arial;
+	text-decoration: none;
+	color: #1437AD;
+	/* border: 1px solid rgb(22, 161, 119); */
+	background-color: rgb(22, 161, 119);
+    color: white;
+}
+.menu a:hover, .menu a.active {
+	color: white
+	border: 1px solid rgb(22, 121, 92);
+	background-color: rgb(22, 121, 92);
