@@ -1,0 +1,26 @@
+.content-two {
+    color: black;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+
+}
+
+.description {
+    margin: auto;
+    width: 70%;
+}
+
+.grad-pic {
+    height: 30px;
+    width: 100%;
+    max-width: 180px;
+    margin-bottom: 100px;
+    background-image: linear-gradient(90deg,
+            #ee732f 20%,
+            #f74c55 0, #f74c55 40%,
+            #2d5f3b 0, #2d5f3b 60%,
+            #404040 0, #404040 80%,
+            #fb636b 0, #fb636b 100%);
+}

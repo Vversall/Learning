@@ -1,0 +1,43 @@
+
+.header {
+    width: 100%;
+    position: absolute;
+}
+
+.header-navigate img {
+    margin: 20px;
+}
+
+.links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+.header-navigate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: 1020px;
+    margin: 0 auto;
+}

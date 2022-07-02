@@ -1,0 +1,31 @@
+.content-three {
+    max-width: 1200px;
+    margin: auto;
+    background-image: url(bg2.png);
+    height: 400px;
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+.outro {
+    margin: auto;
+}
+
+.outro-content {
+    text-align: center;
+
+}
+
+.grad-line {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 10px;
+    background-image: repeating-linear-gradient(90deg,
+            #ee732f 36px,
+            #f74c55 0, #f74c55 72px,
+            #2d5f3b 0, #2d5f3b 108px,
+            #404040 0, #404040 144px,
+            #fb636b 0, #fb636b 180px);
+}
