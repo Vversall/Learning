@@ -1,0 +1,26 @@
+.features {
+    display: flex;
+
+}
+
+.grad-block {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    display: flex;
+    width: 100%;
+    min-height: 300px;
+
+    background-image: linear-gradient(90deg,
+            orange 0 33%, #f74c55 33% 66%, #2d5f3b 66% 100%);
+}
+
+.features-item {
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 100px;
+    width: 33.33%;
+    min-width: 280px;
+    padding: 40px;
+    margin-bottom: 30px;
+    color: #ffffff;
+}
