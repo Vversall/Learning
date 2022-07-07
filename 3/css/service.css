@@ -1,0 +1,38 @@
+.service-promo {
+    display: flex;
+    text-align: center;
+    max-width: 376px;
+    margin: auto;
+    padding: 40px;
+}
+
+.service-promo-second-paragraph {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 0 10px;
+    max-width: 1000px;
+    font-size: 25px;
+    color: #c0ab77;
+}
+
+.horse-images {
+    display: flex;
+    width: 85%;
+    margin: auto;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
+.first-line {
+    max-width: 10%;
+}
+
+.services-promo-slogan {
+    font-weight: normal;
+}
+
+.service {
+    margin: 50px 0;
+}

@@ -1,0 +1,95 @@
+.news-promo {
+    display: flex;
+    text-align: center;
+    margin: auto;
+}
+
+.news-promo-second-paragraph {
+    display: flex;
+    text-align: center;
+    margin: auto;
+    padding: 0 10px;
+    max-width: 148px;
+    font-size: 25px;
+    color: rgb(192, 175, 119);
+}
+
+.first-line {
+    max-width: 10%;
+}
+
+.news-promo-slogan {
+    font-weight: normal;
+}
+
+.news-calendar-first-date {
+    color: rgb(192, 175, 119);
+    font-size: 40px;
+}
+
+.news-calendar-first {
+    max-width: 80%;
+    border: 1px solid rgb(192, 175, 119);
+    text-align: center;
+    margin-bottom: 70px;
+    margin-top: 60px;
+}
+
+.news-information {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.news-information-text-first {
+    max-width: 80%;
+    text-align: center;
+}
+
+.news-information-text-first-title {
+    color: rgb(192, 175, 119);
+    margin-top: 0;
+}
+
+.news-information-text-first-paragraph {
+    color: rgb(128, 128, 128);
+    font-size: 20px;
+}
+
+.news-information-text-second {
+    max-width: 80%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.news-information-text-second-title {
+    color: rgb(192, 175, 119);
+    margin-top: 0;
+
+}
+
+.news-information-text-second-paragraph {
+    color: rgb(128, 128, 128);
+    font-size: 20px;
+}
+
+.news-information-text-third {
+    max-width: 80%;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.news-information-text-third-title {
+    color: #c0ab77;
+    margin-top: 0;
+}
+
+.news-information-text-third-paragraph {
+    color: rgb(128, 128, 128);
+    font-size: 20px;
+}
+
+.news {
+    background: url(../img/news-bg.png) 0px -193px no-repeat;
+    background-color: rgb(221, 221, 221);
+}
