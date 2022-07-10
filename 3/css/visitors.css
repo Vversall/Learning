@@ -1,0 +1,25 @@
+.visitors{
+    text-align: center;
+    max-width: 35%;
+    margin: auto;
+    padding: 40px;
+}
+.visitor-content{
+    display: block;
+}
+.visitors-photo{
+    margin-top: 80px;
+    border-radius: 50%;
+}
+.visitor-paragraph{
+    font-size: 25px;
+}
+.visitors-name{
+    font-size: 30px;
+    color: #c0ab77;
+    margin: 10px 0;
+}
+.visitors-company{
+    color: #808080;
+    font-size: 18px;
+}

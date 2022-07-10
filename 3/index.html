@@ -77,19 +77,25 @@
     </div>
 
     <div class="promo">
-        <div class="membership">
-            <h2 class="promo-word">MEMBERSHIP</h2>
-            <p class="promo-paragraph">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
-                doloremque laudantium, totam rem aperiam, Nemo enim ipsam voluptatem quia</p>
-            <button class="read-more-second">READ MORE</button>
+        <div class="promo-item promo-item-membership">
+            <h2>Membership</h2>
+            <p>
+                Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                rem aperiam, Nemo enim ipsam voluptatem quia
+            </p>
+            <a href="#">Read more</a>
         </div>
-        <div class="signUp">
-            <img src="../3/img/logo.png" alt="logo.png">
-            <h2 class="promo-word">NEWSLETTER</h2>
-            <p class="promo-paragraph">Sing up for some news!</p>
-            <div class="signUp-button">
-                <input type="text" placeholder="Your email address" class="email-second"> </input>
-                <button class="signUp-button-second"> SIGN UP</button>
+        <div class="promo-item promo-item-newsletter">
+            <div>
+            <img src="img/logo.png">
+        </div>
+            <h2>Newsletter</h2>
+            <label for="email2"><u>Sing up for some news!</u></label>
+            <div class="form-wrapper">
+                <form id="email-form">
+                    <input type="email" id="email-form" name="email-form" placeholder=" Your email address" required>
+                    <button type="submit" form="email-form">Sing up</button>
+                </form>
             </div>
         </div>
     </div>
@@ -122,111 +128,128 @@
         </div>
     </div>
 
-    <div class="booking">
-        <div class="booking-title">
-            <div class="headline">
-                <div class="headline-left">
-                    <div class="line-gold"></div>
-                    <div class="line"></div>
-                    <div class="line-gold"></div>
-                </div>
-                <img src="../3/img/logo.png" alt="logo.png">
-                <div class="headline-right">
-                    <div class="line-gold"></div>
-                    <div class="line"></div>
-                    <div class="line-gold"></div>
-                </div>
+    <div class="subscriptions">
+        <div class="headline">
+            <div class="headline-left">
+                <div class="line-gold"></div>
+                <div class="line"></div>
+                <div class="line-gold"></div>
             </div>
-
-            <p class="booking-paragraph">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua.
-            </p>
+            <img src="img/logo.png" alt="logo">
+            <div class="headline-right">
+                <div class="line-gold"></div>
+                <div class="line"></div>
+                <div class="line-gold"></div>
+            </div>
         </div>
-        <div class="booking-price">
-            <div class="booking-price-beginer">
-                <span class="booking-price-beginer-word">BEGINNER</span>
-                <h1 class="booking-price-beginer-price">30$</h1>
-                <hr>
-                <p class="booking-price-beginer-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.ultrices gravida.</p>
-                <button class="booking-price-beginer-button">BOOK NOW</button>
+        <p class="text-offer">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.
+        </p>
+        <div class="subscriptions-item-container">
+            <div class="subscription-item">
+                <span class="subscriptions-type">Beginner</span>
+                <span class="subscriptions-price">30$</span>
+                <div class="subscription-about-wrapper">
+                    <p class="subscriptions-about">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.ultrices gravida. </p>
+                    <a href="#">Book now</a>
+                </div>
             </div>
-            <div class="booking-price-beginer">
-                <span class="booking-price-beginer-word">INTERMIDATE</span>
-                <h1 class="booking-price-beginer-price">60$</h1>
-                <hr>
-                <p class="booking-price-beginer-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.ultrices gravida.</p>
-                <button class="booking-price-beginer-button">BOOK NOW</button>
+            <div class="subscription-item">
+                <span class="subscriptions-type">Intermediate</span>
+                <span class="subscriptions-price">60$</span>
+                <div class="subscription-about-wrapper">
+                    <p class="subscriptions-about">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.ultrices gravida. </p>
+                        <a href="#">Book now</a>
+                </div>
             </div>
-            <div class="booking-price-beginer">
-                <span class="booking-price-beginer-word">PRIVATE</span>
-                <h1 class="booking-price-beginer-price">90$</h1>
-                <hr>
-                <p class="booking-price-beginer-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                    do eiusmod tempor incididunt ut labore et dolore magna aliqua.ultrices gravida.</p>
-                <button class="booking-price-beginer-button">BOOK NOW</button>
+            <div class="subscription-item">
+                <span class="subscriptions-type">Private</span>
+                <span class="subscriptions-price">90$</span>
+                <div class="subscription-about-wrapper">
+                    <p class="subscriptions-about">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua.ultrices gravida. </p>
+                    <a href="#">Book now</a>
+                </div>
             </div>
         </div>
     </div>
 
     <div class="news">
-        <div class="news-promo">
+        <div class="news-wrapper">
             <div class="headline">
-                <div class="headline-left">
-                    <div class="line-gold"></div>
+                <div class="headline_left">
+                    <div class="line_gold"></div>
                     <div class="line"></div>
                     <div class="line-gold"></div>
                 </div>
-                <h1 class="news-promo-slogan">LATEST NEWS</h1>
-                <div class="headline-right">
+                <h2>LATEST NEWS</h2>
+                <div class="headline_right">
                     <div class="line-gold"></div>
                     <div class="line"></div>
                     <div class="line-gold"></div>
                 </div>
             </div>
-        </div>
-        <div class="news-promo-second">
-            <p class="news-promo-second-paragraph">From our blog</p>
-        </div>
-        <div class="news-information">
-            <div class="news-calendar">
-                <div class="news-calendar-first">
-                    <span class="news-calendar-first-date">
+            <div class="headline-describer">From our blog</div>
+            <div class="news-item-wrapper">
+                <div class="news-item">
+                    <div class="news-date">
                         24 Apr
-                    </span>
+                    </div>
+                    <div class="news-info">
+                        <h2>
+                            How to introduce new horses to your herd
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="news-info-viev-more">
+                            Viev more
+                        </a>
+                    </div>
                 </div>
-                <div class="news-calendar-first">
-                    <span class="news-calendar-first-date">
+                <div class="news-item">
+                    <div class="news-date">
                         24 Apr
-                    </span>
+                    </div>
+                    <div class="news-info">
+                        <h2>
+                            Check the Top 10 Best Equestrian Services </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="news-info-viev-more">
+                            Viev more
+                        </a>
+                    </div>
                 </div>
-                <div class="news-calendar-first">
-                    <span class="news-calendar-first-date">
+                <div class="news-item">
+                    <div class="news-date">
                         08 Apr
-                    </span>
-                </div>
-            </div>
-            <div class="news-information-text">
-                <div class="news-information-text-first">
-                    <h1 class='news-information-text-first-title'>HOW TO INTRODUCE NEW HORSES TO YOUR HERD</h1>
-                    <p class="news-information-text-first-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="news-information-text-third">
-                    <h1 class='news-information-text-third-title'>CHECK THE TOP 10 BEST EQUESTRIAN SERVICES</h1>
-                    <p class="news-information-text-third-paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-                <div class="news-information-text-second">
-                    <h1 class='news-information-text-second-title'>NEW GADGET TO MAKE YOUR WORK EASY</h1>
-                    <p class="news-information-text-second-paragraph">Lorem ipsum dolor sit amet, consectetur
-                        adipisicing
-                        elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                    <div class="news-info">
+                        <h2>
+                            New gadget to make your work easy
+                        </h2>
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua.
+                        </p>
+                        <a href="#" class="news-info-viev-more">
+                            Viev more
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>
+    </div>
         <div class="epigraph">
             <span class="epigraph-text">WHAT OUR VISITORS SAY ABOUT US</span>
         </div>
@@ -291,7 +314,6 @@
             </form>
         </div>
     </footer>
->>>>>>> Stashed changes
 </body>
 
 </html>
