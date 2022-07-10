@@ -1,63 +1,119 @@
 .promo {
-    background-image: url(../img/promo-bg.png);
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 100px;
+ display: flex;
+ background: url(../img/promo-bg.png);
+ background-size: cover;
+ text-align: center;
+ min-height: 480px; 
 }
-
-.membership {
-    max-width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  
+.promo-item {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ width: 50%;
+ flex-basis: 350px;
+ flex-grow: 1;
+ padding: 10px;
+ }
+  
+.promo h2 {
+ color: #c0ab77;
+ margin: 15px 0; 
 }
-
-.signUp {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  
+.promo-item-membership p {
+ width: 100%;
+ max-width: 600px;
+ margin: 50px auto;
+ font-size: 25px;
+ color: white; 
 }
-
-.promo-word {
-    color: rgb(192, 171, 119);
-    font-size: 35px;
-    font-weight: normal;
+  
+.promo .form-wrapper #email-form {
+ display: flex;
+ justify-content: center; 
 }
-
-.promo-paragraph {
-    font-size: 25px;
-    color: white;
+  
+.promo-item-membership a,
+.promo-item-newsletter button {
+ color: white;
+ font-size: 20px;
+ line-height: 60px;
+ border: 1px solid #c0ab77;
+ text-decoration: none;
+ text-transform: uppercase;
+ background-color: #c0ab77;
+ transition: 0.3s; 
 }
-
-.signUp-button {
-    display: flex;
+  
+.promo-item-membership a:hover,
+.promo-tem-newsletter button:hover {
+ background-color: #52482e; 
 }
-
-.email-second {
-    padding: 15px;
-    font-size: 20px;
-    padding-right: 100px;
-    color: grey;
+  
+.promo-item_membership {
+ background-color: (#000000, 0.6); 
 }
-
-.signUp-button-second {
-    text-align: center;
-    font-size: 30px;
-    color: white;
-    border-color: rgb(192, 171, 119);
-    background-color: rgb(192, 171, 119);
+  
+.promo-item_newsletter {
+ background-color: (#000000, 0.5); 
 }
-
-.read-more-second {
-    font-size: 18px;
-    text-decoration: none;
-    border: 1px solid;
-    border-color: rgb(192, 171, 119);
-    background-color: rgb(192, 171, 119);
-    color: white;
-    padding: 17px 50px;
-    margin: 50px 0;
+  
+.promo-item-membership a {
+ align-self: center;
+ width: 230px; 
 }
+  
+.promo-item-newsletter label {
+ font-size: 25px;
+ color: white;
+ margin-bottom: 50px; 
+}
+  
+.promo-item-newsletter label u {
+ text-decoration: none; 
+}
+  
+.promo-item-newsletter button {
+ width: 150px;
+ white-space: nowrap;
+}
+  
+.promo-item-newsletter input[type=email] {
+ line-height: 60px;
+ border: none;
+ width: 100%;
+ max-width: 290px;
+ margin-right: 4px;
+ font-size: 25px;
+ color: #c0ab77;
+ padding-left: 10px; 
+}
+  
+.promo-item-newsletter input[type=email]::placeholder {
+ font-size: 20px;
+ color: #c0bebe; 
+}
+  
+.promo-item-newsletter h1 {
+ margin: 30px 0; 
+}
+  
+.promo-item-newsletter img {
+ object-fit: contain; 
+}
+  
+@media screen and (max-width: 768px) {
+.promo {
+flex-wrap: wrap; }
+.promo p, .promo u {
+font-size: 16px;
+margin: 0 0 10px 0; }
+.promo label {
+margin: 0 0 10px 0; }
+.promo h2 {
+font-size: 24px;
+margin: 20px 0; }
+.promo a, .promo .form-wrapper {
+transform: scale(0.7); }
+ }

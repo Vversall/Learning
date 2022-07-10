@@ -4,7 +4,7 @@ header {
 
 .container-social {
     width: 100%;
-    background-color: rgb(54, 54, 54);
+    background-color: #363636;
     display: flex;
     text-align: center;
     color: white;
@@ -35,7 +35,7 @@ header {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(#000000 ,0.5);
 }
 
 .menu-logo {
@@ -70,7 +70,7 @@ header {
 .epigraph {
     font-size: 22px;
     color: #c0ab77;
-    background-color: rgb(54, 54, 54);
+    background-color: #363636;
     text-align: center;
     padding: 18px;
     margin: auto;

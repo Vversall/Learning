@@ -1,48 +1,126 @@
-.booking {
-    background-image: url(../img/subscriptions-bg.png);
+.subscriptions {
+  background: url(../img/subscriptions-bg.png) center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 840px;
 }
 
-.booking-title {
-    text-align: center;
-    max-width: 35%;
-    margin: auto;
-    padding: 40px;
-    justify-content: space-around;
+.subscriptions .text-offer {
+  color: #c0ab77;
+  font-size: 25px;
+  max-width: 700px;
+  padding: 20px;
+  margin: 0 auto 50px;
 }
 
-.booking-price {
-    display: flex;
-    max-width: 60%;
-    text-align: center;
-    margin: auto;
-    color: white;
-    padding-bottom: 100px;
+.subscriptions .subscriptions-item-container {
+  display: flex;
+  max-width: 1120px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 
-.booking-paragraph {
-    font-size: 25px;
-    color: #c0ab77;
+.subscriptions .subscription-item {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border: 1px solid #c0ab77;
+  width: 100%;
+  max-width: 280px;
+  margin: 5px;
+  min-width: 165px;
 }
 
-.booking-price-beginer {
-    max-width: 20%;
-    text-align: center;
-    margin: auto;
-    padding: 40px;
-    padding-bottom: 0;
-    border: 1px solid #c0ab77;
+.subscriptions .headline img {
+  margin-top: 10px;
+  object-fit: contain;
 }
 
-.booking-price-beginer-button {
-    font-size: 18px;
-    text-decoration: none;
-    border: 1px solid;
-    border-color: rgb(192, 171, 119);
-    background-color: rgb(192, 171, 119);
-    color: white;
-    padding: 17px 50px;
+.subscriptions .subscriptions-type {
+  font-size: 18px;
+  margin-top: 25px;
+  text-transform: uppercase;
 }
 
-.booking-price-beginer-paragraph {
-    padding-bottom: 40px;
+.subscriptions .subscriptions-price {
+  font-size: 40px;
+  padding: 10px 0 20px;
+  border-bottom: 1px solid #c0ab77;
+}
+
+.subscriptions .subscriptions-about {
+  font-size: 18px;
+  width: 100%;
+  max-width: 270px;
+  margin: 40px 0;
+}
+
+.subscriptions .subscription-about-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0 10%;
+}
+
+.subscriptions .subscription-about-wrapper a {
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  line-height: 60px;
+  border: none;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: 1px solid #c0ab77;
+  border-bottom: none;
+  background-color: #c0ab77;
+  align-self: center;
+  width: 100%;
+  max-width: 230px;
+}
+
+.subscriptions .subscription-about-wrapper a:hover {
+  background-color: #52482e;
+}
+
+@media screen and (max-width: 768px) {
+  .subscriptions {
+    min-height: 500px;
+    padding: 20px 0;
+  }
+
+  .subscriptions .text-offer {
+    font-size: 16px;
+    padding: 20px;
+    margin: 0;
+  }
+
+  .subscriptions .subscription-about-wrapper a {
+    line-height: 30px;
+    font-size: 15px;
+  }
+
+  .subscriptions .subscriptions-type {
+    font-size: 16px;
+    margin-top: 8px;
+    text-transform: uppercase;
+  }
+
+  .subscriptions .subscriptions-price {
+    font-size: 22px;
+    padding: 0 0 10px;
+    border-bottom: 1px solid #c0ab77;
+  }
+
+  .subscriptions .subscriptions-about {
+    font-size: 14px;
+    width: 100%;
+    max-width: 240px;
+    margin: 10px 0;
+  }
 }

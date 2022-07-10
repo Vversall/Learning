@@ -94,3 +94,19 @@
     flex-direction: column;
     align-items: flex-end;
 }
+@media screen and (max-width: 768px) {
+.gretting {
+ text-align: center;
+ min-height: 400px; }
+.gretting p {
+ font-size: 14px;
+ margin: 0; }
+.gretting .gretting-button {
+ margin: 0;
+ justify-content: center;
+ transform: scale(0.7); }
+.gretting-button .line-gold {
+ display: none; }
+.gretting .headline {
+ margin-bottom: 10px; } 
+}
