@@ -52,11 +52,11 @@
 }
   
 .promo-item_membership {
- background-color: (#000000, 0.6); 
+ background-color: rgb(0, 0, 0, 0.6); 
 }
   
 .promo-item_newsletter {
- background-color: (#000000, 0.5); 
+ background-color: rgb(0, 0, 0, 0.6); 
 }
   
 .promo-item-membership a {
