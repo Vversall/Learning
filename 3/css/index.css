@@ -1,0 +1,20 @@
+@import url(header.css);
+@import url(gretting.css);
+@import url(promo.css);
+@import url(service.css);
+@import url(booking.css);
+@import url(news.css);
+@import url(visitors.css);
+@import url(galery.css);
+@import url(footer.css);
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    --main-color-gold: #c0ab77;
+    --main-color-darkGrey: #363636;
+    --main-color-Grey: #646464;
+  }
