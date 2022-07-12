@@ -1,0 +1,119 @@
+.promo {
+ display: flex;
+ background: url(../img/promo-bg.png);
+ background-size: cover;
+ text-align: center;
+ min-height: 480px; 
+}
+  
+.promo-item {
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ width: 50%;
+ flex-basis: 350px;
+ flex-grow: 1;
+ padding: 10px;
+ }
+  
+.promo h2 {
+ color: var(--main-color-gold);
+ margin: 15px 0; 
+}
+  
+.promo-item-membership p {
+ width: 100%;
+ max-width: 600px;
+ margin: 50px auto;
+ font-size: 25px;
+ color: white; 
+}
+  
+.promo .form-wrapper #email-form {
+ display: flex;
+ justify-content: center; 
+}
+  
+.promo-item-membership a,
+.promo-item-newsletter button {
+ color: white;
+ font-size: 20px;
+ line-height: 60px;
+ border: 1px solid var(--main-color-gold);
+ text-decoration: none;
+ text-transform: uppercase;
+ background-color: var(--main-color-gold);
+ transition: 0.3s; 
+}
+  
+.promo-item-membership a:hover,
+.promo-tem-newsletter button:hover {
+ background-color: #52482e; 
+}
+  
+.promo-item-membership {
+ background-color: rgb(0, 0, 0, 0.6); 
+}
+  
+.promo-item-newsletter {
+ background-color: rgb(0, 0, 0, 0.4); 
+}
+  
+.promo-item-membership a {
+ align-self: center;
+ width: 230px; 
+}
+  
+.promo-item-newsletter label {
+ font-size: 25px;
+ color: white;
+ margin-bottom: 50px; 
+}
+  
+.promo-item-newsletter label u {
+ text-decoration: none; 
+}
+  
+.promo-item-newsletter button {
+ width: 150px;
+ white-space: nowrap;
+}
+  
+.promo-item-newsletter input[type=email] {
+ line-height: 60px;
+ border: none;
+ width: 100%;
+ max-width: 290px;
+ margin-right: 4px;
+ font-size: 25px;
+ color: var(--main-color-gold);
+ padding-left: 10px; 
+}
+  
+.promo-item-newsletter input[type=email]::placeholder {
+ font-size: 20px;
+ color: #c0bebe; 
+}
+  
+.promo-item-newsletter h1 {
+ margin: 30px 0; 
+}
+  
+.promo-item-newsletter img {
+ object-fit: contain; 
+}
+  
+@media screen and (max-width: 768px) {
+.promo {
+flex-wrap: wrap; }
+.promo p, .promo u {
+font-size: 16px;
+margin: 0 0 10px 0; }
+.promo label {
+margin: 0 0 10px 0; }
+.promo h2 {
+font-size: 24px;
+margin: 20px 0; }
+.promo a, .promo .form-wrapper {
+transform: scale(0.7); }
+ }

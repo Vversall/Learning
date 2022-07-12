@@ -1,0 +1,112 @@
+.gretting {
+    display: flex;
+    align-items: stretch;
+    background: url(../img/horse.png) 1000px 50px no-repeat;
+    min-height: 850px;
+    background-color: #e2e0e0;
+}
+
+.gretting .headline {
+    margin-bottom: 100px;
+}
+
+.gretting .gretting-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+.gretting p {
+    max-width: 630px;
+    margin: 20px 0 20px 40px;
+    padding: 10px;
+    width: 100%;
+    font-size: 25px;
+    color: #848484;
+}
+
+.gretting .gretting-button {
+    display: flex;
+    align-items: center;
+    margin: 50px 0 50px 40px;
+}
+
+.gretting a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--main-color-gold);
+    color: var(--main-color-gold);
+    text-transform: uppercase;
+    font-size: 20px;
+    height: 65px;
+    width: 230px;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.gretting a:hover {
+    color: black;
+    border-color: black;
+}
+
+.gretting .gold-text {
+    color: var(--main-color-gold);
+}
+
+.headline {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.headline h2 {
+    width: max-content;
+    text-align: center;
+    font-size: 33px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #1b1b1b;
+    margin: 0 20px;
+}
+
+.headline .line {
+    height: 1px;
+    width: calc(100vw * 0.15);
+    background-color: #848484;
+    margin: 15px 0;
+}
+
+.headline .line-gold {
+    height: 1px;
+    width: calc(100vw * 0.12);
+    background-color: var(--main-color-gold); 
+ }
+
+.headline .headline-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+@media screen and (max-width: 768px) {
+.gretting {
+ text-align: center;
+ min-height: 400px; }
+.gretting p {
+ font-size: 14px;
+ margin: 0; }
+.gretting .gretting-button {
+ margin: 0;
+ justify-content: center;
+ transform: scale(0.7); }
+.gretting-button .line-gold {
+ display: none; }
+.gretting .headline {
+ margin-bottom: 10px; } 
+}

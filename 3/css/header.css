@@ -1,0 +1,197 @@
+header {
+    background: url(../img/bg.png) center;
+    background-size: cover;
+    min-height: 940px;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    visibility: visible;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--main-color-darkGrey);
+    min-height: 50px;
+    width: 100%;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.header .header-social {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.header .header-social a {
+    margin-right: 40px;
+}
+
+.header .header-social img {
+    height: 15px;
+    width: 15px;
+    object-fit: contain;
+    transition: 0.1s;
+}
+
+.header .header-social img:hover {
+    filter: brightness(0.4);
+}
+
+.header .header-email-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+    height: 50px;
+    padding: 5px;
+    color: var(--main-color-Grey);
+    font-size: 13px;
+}
+
+.header .header-email-input label {
+    margin-right: 10px;
+}
+
+.header .header-email-input input {
+    border: 1px solid var(--main-color-gold);
+    background-color: var(--main-color-darkGrey);
+    color: white;
+}
+
+.header .header-email-input input[type=email] {
+    width: 100%;
+    max-width: 150px;
+}
+
+.header .header-email-input input[type=submit] {
+    border: none;
+    color: var(--main-color-gold);
+}
+
+.header-close-header {
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.menu-logo {
+    margin: 20px;
+}
+
+.menu-button {
+    margin-bottom: 20px;
+}
+
+.menu-button a {
+    color: var(--main-color-gold);
+    font-size: 18px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.slogan {
+    font-size: 30px;
+    color: white;
+    display: flex;
+    text-align: center;
+    max-width: 900px;
+    margin: auto;
+}
+
+.slogan-text {
+    font-weight: normal;
+    margin: 200px 0;
+}
+
+.epigraph {
+    font-size: 22px;
+    color: var(--main-color-gold);
+    background-color: var(--main-color-darkGrey);
+    text-align: center;
+    padding: 18px;
+    margin: auto;
+}
+
+.header-email-input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 15px;
+    height: 50px;
+    padding: 5px;
+    color: var(--main-color-Grey);
+    font-size: 13px;
+}
+
+.header-email-input label {
+    margin-right: 10px;
+}
+
+.container-social .header-email-input input {
+    border: 1px solid var(--main-color-gold);
+    background-color: var(--main-color-darkGrey);
+    color: white;
+}
+
+.container-social .header-email-input input[type=email] {
+    width: 100%;
+    max-width: 150px;
+}
+
+.container-social .header-email-input input[type=submit] {
+    border: none;
+    color: var(--main-color-gold);
+}
+
+.promotion {
+    display: flex;
+    height: 70px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: var(--main-color-darkGrey);
+    font-size: 18px;
+    color: var(--main-color-gold);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 0 10px;
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        min-height: 600px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header .header-social {
+        justify-content: space-around;
+        margin: 0;
+    }
+
+    .header-close-header {
+        top: 5px;
+        right: 5px;
+    }
+
+    .slogan h1 {
+        font-size: 40px;
+    }
+
+    .header .header-email-input input[type=email] {
+        max-width: 120px;
+    }
+}
