@@ -1,0 +1,67 @@
+#header{
+    background-color: rgba(233, 190, 51, 0.4);
+}
+.secondary-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+.secondary-links-menu {
+    display: flex;
+    gap: 35px;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.phone-number {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.honey-logo {
+    height: 112px;
+    width: 128px;
+}
+
+.kyievstar,
+.kyievstar1 {
+    height: 40px;
+    width: 40px;
+}
+
+.honey-logo,
+.kyievstar,
+.number,
+.kyievstar1 {
+    margin-right: 20px;
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+#menu a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font: bold 20px Arial;
+}
+
+#menu a:hover,
+#menu a.active {
+    background-color: rgb(206, 126, 126);
+}
+
+.secondary-links-menu a {
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+}

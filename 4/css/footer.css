@@ -1,0 +1,30 @@
+#footer{
+    background-color: rgba(233, 190, 51, 0.4);
+}
+.footer-conteiner{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+}
+.secondary-links-menu-footer{
+    list-style-type: none;
+    padding: 0;
+}
+.right{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    text-align: center;
+    font-size: 25px;
+    text-transform: uppercase;
+
+}
+.secondary-links-menu-footer a{
+    text-decoration: none;
+    color: black;
+    font-size: 22px;
+    
+}
