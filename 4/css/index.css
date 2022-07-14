@@ -1,0 +1,31 @@
+@import url(header.css);
+@import url(footer.css);
+@import url(subscription.css);
+@import url(main.css);
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(../images/main-background.jpg);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: auto;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+
+.mukola-container{
+    display: flex;
+    margin: auto;
+   align-items: center;
+   justify-content: center;
+}
