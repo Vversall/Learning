@@ -23,9 +23,15 @@
     text-transform: uppercase;
 
 }
-.secondary-links-menu-footer a{
+.secondary-links-menu a{
     text-decoration: none;
     color: black;
     font-size: 22px;
+    background-color: rgb(254, 177, 57);
+    padding: 10px;
+    border: 1px solid black;
     
+}
+.secondary-links-menu a:hover{
+    background-color: white;
 }
