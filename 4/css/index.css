@@ -2,35 +2,56 @@
 @import url(footer.css);
 @import url(subscription.css);
 @import url(main.css);
+@import url(variables.css);
+@import url(common.css);
 
 body {
-    margin: 0;
-    padding: 0;
     background-image: url(../images/main-background.jpg);
 }
 
 * {
     box-sizing: border-box;
-    /* font-family: 'Droid Sans', arial, serif; */
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 .wrapper {
     margin: auto;
 }
-ul, ol{
-    padding: 0%;
-}
-li {
-    padding-bottom: 10px;
-    display: flex;
-    padding-bottom: 10px;
-    align-items: center;
+
+ul, ol {
+    padding: 0;
+    margin: 0;
 }
 
+/*li {*/
+/*    padding-bottom: 10px;*/
+/*}*/
 
-.mukola-container{
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 500;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+.mukola-container {
     display: flex;
     margin: auto;
-   align-items: center;
-   justify-content: center;
+    align-items: center;
+    justify-content: center;
 }

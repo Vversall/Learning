@@ -1,87 +1,123 @@
-.main{
+.main {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
 }
-.oplata-text{
+
+.oplata-text {
     font-size: 20px;
 }
-.main-text{
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    padding: 12px;
     text-align: center;
-    max-width: 50%;
-    margin: auto;
+    max-width: 800px;
 }
-.main-text-title{
-    font-size: 35px;
+
+.main-heading {
 }
-.main-text-title-small{
+
+.main-description {
     font-size: 30px;
 }
-.main-text-paragraph{
-    font-size: 25px;
+
+.main-text-paragraph {
+    text-align: justify;
+    font-size: 20px;
 }
-.number-wraper{
+
+.main-list {
+    align-self: start;
+}
+
+.achievements {
     display: flex;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: space-evenly;
+    width: 100%;
 }
-.mukola{
+
+.achievement-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.achievement-heading {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.achievement-text {
+    font-size: 18px;
+}
+
+.mukola {
     max-width: 50%;
     display: flex;
     align-items: center;
     justify-items: right;
     margin: auto;
 }
-.mukola-jpg{
+
+.mukola-jpg {
     height: 500px;
     width: 500px;
 }
 
-.main-title{
+.main-title {
     text-align: center;
     font-size: 40px;
 }
-.main-title-litle{
+
+.main-title-litle {
     font-size: 30px;
     color: green;
 }
+
 @media screen and (max-width: 1000px) {
-   .main{
-    display: block;
-   }
-   .mukola{
-    align-items: flex-start;
-   
-   }
-   .main-text{
-    margin: auto;
-   }
-   .main-text-title{
-    font-size: 30px;
+    .main {
+        display: block;
+    }
+
+    .mukola {
+        align-items: flex-start;
+
+    }
+
+    .main-heading {
+    }
+
+    .main-description {
+        font-size: 25px;
+    }
+
+    .main-text-paragraph {
+        font-size: 18px;
+    }
+
+    .mukola-jpg {
+        height: 500px;
+        width: 500px;
+    }
 }
-.main-text-title-small{
-    font-size: 25px;
-}
-.main-text-paragraph{
-    font-size: 20px;
-}
-.mukola-jpg{
-    height: 500px;
-    width: 500px;
-}
-}
-.product_honey {
+
+.gallery {
     text-align: center;
     min-height: 500px;
 }
 
-.product_honey .text-offer {
+.gallery .text-offer {
     font-size: 25px;
     max-width: 700px;
     padding: 20px;
     margin: 0 auto 50px;
 }
 
-.product_honey .product_honey-item-container {
+.gallery .product_honey-item-container {
     display: flex;
     max-width: 1120px;
     width: 100%;
@@ -91,141 +127,147 @@
     flex-wrap: wrap;
 }
 
-.product_honey .product_honey-item {
+.gallery .product_honey-item {
     display: flex;
+    gap: 16px;
+    padding: 16px 16px 0 16px;
     flex-direction: column;
     color: rgb(0, 0, 0);
-    border: 2px solid black;
+    background: white;
+    border: var(--border);
     width: 100%;
     max-width: 280px;
     margin: 5px;
     min-width: 165px;
-    border-color: gold;
 }
 
-.product_honey .headline img {
+.gallery .headline img {
     margin-top: 10px;
     object-fit: contain;
 }
 
-.product_honey .product_honey-type {
-    font-size: 18px;
-    margin-top: 25px;
+.gallery .product_honey-type {
+    font-size: 22px;
     text-transform: uppercase;
 }
 
-.product_honey .product_honey-price {
+.gallery .product_honey-price {
     font-size: 40px;
     padding: 10px 0 20px;
 }
 
-.product_honey .product_honey-about {
+.gallery .product_honey-about {
     font-size: 18px;
     width: 100%;
     max-width: 270px;
     margin: 40px 0;
 }
 
-.product_honey .product_honey-about-wrapper {
-    display: flex;
-    flex-direction: column;
-    padding: 0 10%;
-    margin-top: 15px;
-}
+/*.gallery .product_honey-about-wrapper {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*}*/
 
-.product_honey .product_honey-about-wrapper a {
+.gallery a {
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 20px;
     line-height: 60px;
-    border: none;
     text-decoration: none;
     text-transform: uppercase;
-    border: 2px solid gold;
+    border: var(--border);
     border-bottom: none;
     background-color: white;
     align-self: center;
     width: 100%;
     max-width: 230px;
+    transition: 0.3s;
 }
 
-.product_honey .product_honey-about-wrapper a:hover {
-    background-color: rgb(210, 214, 91);
+.gallery a:hover {
+    background-color: var(--secondary-backgroup-color);
+    color: white;
 }
-.product_honey-item-container img{
+
+.product_honey-item-container img {
     margin-bottom: 10px;
 }
+
 .show-more {
     font-size: 22px;
     margin: 15px;
     margin-bottom: 20px;
 }
-.show-more-link{
+
+.show-more-link {
     text-decoration: none;
     border: 2px solid gold;
     padding: 10px;
     background-color: white;
 }
+
 .show-more a:hover,
 .show-more a.active {
     background-color: rgb(210, 214, 91);
 }
-.product_selling{
-    font-size: 35px;
-    font-weight: bold;
+
+.gallery-heading {
     margin: 20px;
-    text-align: unset;
 }
 
 @media screen and (max-width: 768px) {
-    .product_honey {
+    .gallery {
         min-height: 500px;
         padding: 20px 0;
     }
 
-    .product_honey .text-offer {
+    .gallery .text-offer {
         font-size: 16px;
         padding: 20px;
         margin: 0;
     }
 
-    .product_honey .product_honey-about-wrapper a {
+    .gallery .product_honey-about-wrapper a {
         line-height: 30px;
         font-size: 15px;
 
 
     }
 
-    .product_honey .product_honey-type {
+    .gallery .product_honey-type {
         font-size: 16px;
-        margin-top: 8px;
         text-transform: uppercase;
     }
 
-    .product_honey .product_honey-price {
+    .gallery .product_honey-price {
         font-size: 22px;
         padding: 0 0 10px;
     }
 
-    .product_honey .product_honey-about {
+    .gallery .product_honey-about {
         font-size: 14px;
         width: 100%;
         max-width: 240px;
         margin: 10px 0;
     }
 }
-.information{
+
+.information {
     margin: 30px;
 }
-.number{
+
+.number {
     text-align: center;
 }
-.contacts-list-adress{
+
+.contacts-list-adress {
     margin-left: 20px;
 }
-.contacts{
+
+.contacts {
     font-size: 20px;
 }
-.contacts-title{
+
+.contacts-title {
     margin: 40px;
 }
