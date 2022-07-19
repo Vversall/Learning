@@ -1,4 +1,9 @@
 :root {
     --primary-text-color: black;
     --secondary-text-color: #a51200;
+
+    --primary-backgroup-color: #d95507;
+    --secondary-backgroup-color: #f9c700;
+
+    --border: 2px solid var(--secondary-backgroup-color);
 }
