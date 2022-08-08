@@ -1,6 +1,4 @@
-#header{
-    background-color: rgba(255,223,43,0.5)
-}
+
 .secondary-links {
     display: flex;
     justify-content: center;
@@ -9,6 +7,7 @@
 }
 
 .secondary-links-menu {
+    margin-top: 20px;
     display: flex;
     gap: 35px;
     justify-content: center;
@@ -66,4 +65,30 @@
     text-decoration: none;
     color: black;
     font-size: 22px;
+}
+
+html.dark,
+.dark body {
+    font-size: 18px;
+    font-family: sans-serif;
+    background-image: url(../images/darkbg.jpg);
+    color: #fff;
+}
+
+.container {
+    max-width: 120px;
+    margin: auto;
+    padding: 3px;
+
+}
+.themetoggle{
+    margin: auto;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-radius: 10%;
+}
+
+.dark a {
+    color: rgb(255, 255, 255);
 }
