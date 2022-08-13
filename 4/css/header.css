@@ -1,6 +1,4 @@
-#header{
-    background-color: rgba(255,223,43,0.5)
-}
+
 .secondary-links {
     display: flex;
     justify-content: center;
@@ -9,6 +7,7 @@
 }
 
 .secondary-links-menu {
+    margin-top: 20px;
     display: flex;
     gap: 35px;
     justify-content: center;
@@ -67,7 +66,6 @@
     color: black;
     font-size: 22px;
 }
-
 
 html.dark,
 .dark body {
