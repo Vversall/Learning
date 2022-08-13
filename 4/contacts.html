@@ -7,45 +7,91 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../4/css/index.css">
-    <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" /> -->
 </head>
 
 <body>
     <div class="wrapper">
         <header id="header">
-            <!-- <div class="phone-number">
+            <div class="phone-number">
+               <div>
                 <img src="../4/images/kyievstar.png" alt="kyievstar.png" class="kyievstar">
-                <span class="number">+ 380 098 96 56 054 </span>
+                <a href="tel:+3800989656054" class="number">+380 098 96 56 054 </a>
                 <a href="https://web.telegram.org/k/#521983965"><img src="../4/images/telegram.png" alt="telegram.png"
                         class="kyievstar1"></a>
                 <img src="../4/images/viber.png" alt="viber.png" class="kyievstar1">
-            </div> -->
-
+                </div>
+                <div class="container">
+                    <div class="section theme">
+                        <ul>
+                            <li><button href="#" class="themetoggle">
+                                    Togle theme
+                                </button></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
             <div id="menu">
                 <a href="main.html">Головна</a>
                 <a href="med.html">Мед</a>
                 <a href="pasika.html">Все для пасіки</a>
-                <a href="#">Контакти</a>
+                <a href="contacts.html">Контакти</a>
             </div>
 
         </header>
         <h1 class="contacts-title">Наші контакти</h1>
+
         <div class="contacts">
             <ol class="contacts-list">
                 <li><img src="../4/images/kyievstar.png" alt="kyievstar.png" class="kyievstar">
-                    <span class="number">+ 380 098 96 56 054 </span></li>
-                <li><a href="https://web.telegram.org/k/#521983965"><img src="../4/images/telegram.png" alt="telegram.png"
-                    class="kyievstar1"></a></li>
+                    <span class="number">+ 380 098 96 56 054 </span>
+                </li>
+                <li><a href="https://web.telegram.org/k/#521983965"><img src="../4/images/telegram.png"
+                            alt="telegram.png" class="kyievstar1"></a></li>
                 <li> <img src="../4/images/viber.png" alt="viber.png" class="kyievstar1"></li>
                 <li class="contacts-list-adress">Адреса: Черняхівський район, Житомирська область, с.Високе</li>
+
             </ol>
         </div>
+        <span class="form_title"> Залиште свій номер телефону, і ми з вами зв'яжемось</span>
+        <form name="myForm" action="../4/oplata_dostavka.html" onsubmit="return validateForm()" method="post"
+            class="form">
+            Номер телефону: <input type="text" name="fname">
+            <input type="submit" value="Підтвердити">
+        </form>
+
+
+        <div class="burger-menu ">
+
+            <a href="#" class="burger-menu__button">
+                <span class="burger-menu__lines"></span>
+            </a>
+
+            <nav class="burger-menu__nav">
+                <a href="main.html" class="burger-menu__link">Головна</a>
+                <a href="med.html" class="burger-menu__link">Мед</a>
+                <a href="pasika.html" class="burger-menu__link">Все для пасіки</a>
+                <a href="contacts.html" class="burger-menu__link">Контакти</a>
+            
+
+            <div class="burger-menu__overlay"></div>
+        </div>
+
+
         <div class="google-map-api">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m21!1m12!1m3!1d20342.733390592937!2d28.784139995565155!3d50.40678818602701!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m6!3e2!4m0!4m3!3m2!1d50.4025961!2d28.804128199999997!5e0!3m2!1sru!2sua!4v1658047220949!5m2!1sru!2sua"
                 width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade">
             </iframe>
+
+
+            <script src="./js/togle.js"></script>
+                <script src="./js/copy&weather.js"></script>
+                <script src="./js/burger-menu.js"></script>
+                <script src="./js/modal.js"></script>
+                <script src="./js/swipe.js"></script>
+                <script src="./js/favorite.js"></script>
+                <script src="./js/galerry.js"></script>
         </div>
         <footer id="footer">
             <div class="footer-conteiner">
@@ -65,7 +111,6 @@
                 </nav>
 
             </div>
-            <span class="right">2022 all rights reserved</span>
 
         </footer>
     </div>

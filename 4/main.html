@@ -7,20 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../4/css/index.css">
-    <!-- <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" /> -->
 </head>
 
 <body>
     <div class="wrapper">
         <header id="header">
             <div class="phone-number">
+               <div>
                 <img src="../4/images/kyievstar.png" alt="kyievstar.png" class="kyievstar">
-                <span class="number">+ 380 098 96 56 054 </span>
+                <a href="tel:+3800989656054" class="number">+380 098 96 56 054 </a>
                 <a href="https://web.telegram.org/k/#521983965"><img src="../4/images/telegram.png" alt="telegram.png"
                         class="kyievstar1"></a>
                 <img src="../4/images/viber.png" alt="viber.png" class="kyievstar1">
+                </div>
+                <div class="container">
+                    <div class="section theme">
+                        <ul>
+                            <li><button href="#" class="themetoggle">
+                                    Togle theme
+                                </button></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
             <div id="menu">
                 <a href="main.html">Головна</a>
                 <a href="med.html">Мед</a>
@@ -29,6 +38,23 @@
             </div>
 
         </header>
+
+        <div class="burger-menu ">
+
+            <a href="#" class="burger-menu__button">
+                <span class="burger-menu__lines"></span>
+            </a>
+
+            <nav class="burger-menu__nav">
+                <a href="main.html" class="burger-menu__link">Головна</a>
+                <a href="med.html" class="burger-menu__link">Мед</a>
+                <a href="pasika.html" class="burger-menu__link">Все для пасіки</a>
+                <a href="contacts.html" class="burger-menu__link">Контакти</a>
+                
+            </nav>
+
+            <div class="burger-menu__overlay"></div>
+        </div>
         <section class="main">
             <div class="main-text">
                 <h1 class='main-text-title'>НАТУРАЛЬНИЙ МЕД</h1>
@@ -126,6 +152,92 @@
                 <div class="show-more">
                     <a href="pasika.html" class="show-more-link">Показати ще</a>
                 </div>
+                <button id="myBtn">Modal button</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p>Modal window</p>
+                    </div>
+                </div>
+                <div class="containers">
+
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/mukola.jpg" class="mySlides__photo" style="margin: auto;
+            display: flex; width: 750px; height: 700px;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/mukola1.jpg" class="mySlides__photo" style="margin: auto;
+            display: flex; width: 750px; height: 700px;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images/mukola2.jpg" class="mySlides__photo" style="margin: auto;
+            display: flex; width: 750px; height: 700px;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/mukola3.jpg" class="mySlides__photo" style="margin: auto;
+            display: flex; width: 750px; height: 700px;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">5 / 6</div>
+                        <img src="images/mukola4.jpg" class="mySlides__photo" style="margin: auto;
+            display: flex; width: 750px; height: 700px;">
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="images/mukola5.jpg" class="mySlides__photo" style="margin: auto;
+            display: flex; width: 750px; height: 700px;">
+                    </div>
+
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="images/mukola.jpg" style="width:100%"
+                                onclick="currentSlide(1)" alt="Mukola">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/mukola1.jpg" style="width:100%"
+                                onclick="currentSlide(2)" alt="Mukola">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/mukola2.jpg" style="width:100%"
+                                onclick="currentSlide(3)" alt="Mukola">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/mukola3.jpg" style="width:100%"
+                                onclick="currentSlide(4)" alt="Mukola">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/mukola4.jpg" style="width:100%"
+                                onclick="currentSlide(5)" alt="Mukola">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/mukola5.jpg" style="width:100%"
+                                onclick="currentSlide(6)" alt="Mukola">
+                        </div>
+                    </div>
+                </div>
+                <script src="./js/togle.js"></script>
+                <script src="./js/copy&weather.js"></script>
+                <script src="./js/burger-menu.js"></script>
+                <script src="./js/modal.js"></script>
+                <script src="./js/swipe.js"></script>
+                <script src="./js/favorite.js"></script>
+                <script src="./js/galerry.js"></script>
             </div>
             <footer id="footer">
                 <div class="footer-conteiner">
@@ -145,6 +257,8 @@
                     </nav>
 
                 </div>
+
+                <script src="./js/modal.js"></script>
                 <span class="right">2022 all rights reserved</span>
 
             </footer>
