@@ -1,4 +1,8 @@
 let selectedDiv;
+if(localStorage.getItem('color')!==null) {
+  const color = localStorage.getItem('color');
+  document.getElementsByClassName('star')[1].style.background = color;
+}
 
 document.body.onclick = function(event) {
     
@@ -14,13 +18,10 @@ function highlight(div) {
   if (selectedDiv) { 
     selectedDiv.classList.remove('star');
   }
-  selecteddiv = div;
+  selectedDiv = div;
  
-  selecteddiv.classList.add('star1'); 
+  selectedDiv.classList.add('star1'); 
   console.log('work') ;
   localStorage.setItem('color', 'goldenrod');
-//   if(localStorage.getItem('color')!==null) {
-//     const color = localStorage.getItem('color');
-//     document.getElementsByClassName('star')[0].style.background = color;
-// }
+
 }

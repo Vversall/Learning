@@ -13,7 +13,7 @@ document.body.onclick = function(event) {
 //   }
   
   
-  var slideIndex = 1;
+  let slideIndex = 1;
   showSlides(slideIndex);
   
   function plusSlides(n) {
@@ -25,10 +25,10 @@ document.body.onclick = function(event) {
   }
   
   function showSlides(n) {
-    var i;
-    var slides = document.getElementsByClassName("mySlides");
-    var dots = document.getElementsByClassName("demo");
-    var captionText = document.getElementById("caption");
+    let i;
+    const slides = document.getElementsByClassName("mySlides");
+    const dots = document.getElementsByClassName("demo");
+    const captionText = document.getElementById("caption");
     if (n > slides.length) {slideIndex = 1}
     if (n < 1) {slideIndex = slides.length}
     for (i = 0; i < slides.length; i++) {

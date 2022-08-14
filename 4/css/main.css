@@ -517,7 +517,7 @@ a.burger-menu__link {
   }
   .form_title{
     font-size: 26px;
-    color: darkblue;
+    /* color: red; */
     padding: 20px;
   }
 
@@ -576,4 +576,7 @@ a.burger-menu__link {
     border: 1px solid black;
     background-color: goldenrod;
   }
-
+#myInput{
+    border: 0px;
+    font-size: 17px;
+}
