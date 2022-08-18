@@ -15,7 +15,6 @@ async function getResponse(){
         <div class="product_honey-about-wrapper">
             <img src="${content[key].imageUrl}" alt="honey-1.png">
             <span class="product_honey-price">${content[key].price} </span>
-            <span class="product_honey-type">${content[key].description}</span>
             <a href="med.html">Замовити</a>
         </div>
     </div>
