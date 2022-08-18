@@ -206,6 +206,252 @@ a.burger-menu__link {
     display: none;
 }
 
+
+
+@media screen and (max-width: 768px) {
+    .product_honey {
+        min-height: 500px;
+        padding: 20px 0;
+    }
+
+    .product_honey .text-offer {
+        font-size: 16px;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .product_honey .product_honey-about-wrapper a {
+        line-height: 30px;
+        font-size: 15px;
+
+
+    }
+
+    .product_honey .product_honey-type {
+        font-size: 16px;
+        margin-top: 8px;
+        text-transform: uppercase;
+    }
+
+    .product_honey .product_honey-price {
+        font-size: 22px;
+        padding: 0 0 10px;
+    }
+
+    .product_honey .product_honey-about {
+        font-size: 14px;
+        width: 100%;
+        max-width: 240px;
+        margin: 10px 0;
+    }
+}
+
+.information {
+    margin: 30px;
+}
+
+.number {
+    text-align: center;
+    text-decoration: none;
+    font-size: 23;
+    color: black;
+}
+
+.contacts-list-adress {
+    margin-left: 20px;
+    margin-bottom: 35px;
+}
+
+.contacts {
+    font-size: 20px;
+}
+
+.contacts-title {
+    margin: 40px;
+
+}
+
+#myBtn{
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    border-radius: 10%;
+    margin-bottom: 20px;
+
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: rgb(100, 100, 100);
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid black;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+
+
+.containers {
+    position: relative;
+  }
+
+  .mySlides {
+    display: none;
+  }
+  
+  .cursor {
+    cursor: pointer;
+  }
+  
+  .prev,
+  .next {
+    cursor: pointer;
+    top: 40%;
+    width: auto;
+    padding: 15px;
+    margin-top: -50px;
+    color: rgb(255, 37, 37);
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  } */
+
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+  .mySlides__photo{
+    width: 50%;
+    display: flex;
+    margin: auto;
+  }
+
+  .form{
+    margin: 40px 100px;
+  }
+  .form_title{
+    font-size: 26px;
+    /* color: red; */
+    padding: 20px;
+  }
+
+
+
+  .tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 140px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 150%;
+    left: 50%;
+    margin-left: -75px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .star{
+    margin: 6px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border: 1px solid black;
+  }
+  .star1{
+    margin: 6px;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: goldenrod;
+  }
+#myInput{
+    border: 0px;
+    font-size: 17px;
+}
 @media screen and (max-width: 480px) {
     .mySlides__photo{
         width: 250px;
@@ -334,249 +580,4 @@ a.burger-menu__link {
     .burger-menu_active .burger-menu__overlay {
         display: block;
     }
-}
-
-@media screen and (max-width: 768px) {
-    .product_honey {
-        min-height: 500px;
-        padding: 20px 0;
-    }
-
-    .product_honey .text-offer {
-        font-size: 16px;
-        padding: 20px;
-        margin: 0;
-    }
-
-    .product_honey .product_honey-about-wrapper a {
-        line-height: 30px;
-        font-size: 15px;
-
-
-    }
-
-    .product_honey .product_honey-type {
-        font-size: 16px;
-        margin-top: 8px;
-        text-transform: uppercase;
-    }
-
-    .product_honey .product_honey-price {
-        font-size: 22px;
-        padding: 0 0 10px;
-    }
-
-    .product_honey .product_honey-about {
-        font-size: 14px;
-        width: 100%;
-        max-width: 240px;
-        margin: 10px 0;
-    }
-}
-
-.information {
-    margin: 30px;
-}
-
-.number {
-    text-align: center;
-    text-decoration: none;
-    font-size: 23;
-    color: black;
-}
-
-.contacts-list-adress {
-    margin-left: 20px;
-    margin-bottom: 35px;
-}
-
-.contacts {
-    font-size: 20px;
-}
-
-.contacts-title {
-    margin: 40px;
-
-}
-
-#myBtn{
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    border-radius: 10%;
-    margin-bottom: 20px;
-
-}
-.modal {
-    display: none;
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    background-color: rgba(0, 0, 0, 0.7);
-}
-
-.modal-content {
-    background-color: rgb(100, 100, 100);
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid black;
-    width: 80%;
-}
-
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-
-
-.containers {
-    position: relative;
-  }
-
-  .mySlides {
-    display: none;
-  }
-  
-  .cursor {
-    cursor: pointer;
-  }
-  
-  .prev,
-  .next {
-    cursor: pointer;
-    top: 40%;
-    width: auto;
-    padding: 16px;
-    margin-top: -50px;
-    color: rgb(255, 37, 37);
-    font-weight: bold;
-    font-size: 20px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    -webkit-user-select: none;
-  }
-  
-  .next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-  }
-  
-  .prev:hover,
-  .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-  }
-
-  .numbertext {
-    color: #f2f2f2;
-    font-size: 12px;
-    padding: 8px 12px;
-    position: absolute;
-    top: 0;
-  }
-
-  .caption-container {
-    text-align: center;
-    background-color: #222;
-    padding: 2px 16px;
-    color: white;
-  }
-  
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-
-  .column {
-    float: left;
-    width: 16.66%;
-  }
-
-  .demo {
-    opacity: 0.6;
-  }
-  
-  .active,
-  .demo:hover {
-    opacity: 1;
-  }
-  .mySlides__photo{
-    width: 50%;
-    display: flex;
-    margin: auto;
-  }
-
-  .form{
-    margin: 40px 100px;
-  }
-  .form_title{
-    font-size: 26px;
-    /* color: red; */
-    padding: 20px;
-  }
-
-
-
-  .tooltip {
-    position: relative;
-    display: inline-block;
-  }
-  
-  .tooltip .tooltiptext {
-    visibility: hidden;
-    width: 140px;
-    background-color: #555;
-    color: #fff;
-    text-align: center;
-    border-radius: 6px;
-    padding: 5px;
-    position: absolute;
-    z-index: 1;
-    bottom: 150%;
-    left: 50%;
-    margin-left: -75px;
-    opacity: 0;
-    transition: opacity 0.3s;
-  }
-  
-  .tooltip .tooltiptext::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
-  }
-  
-  .tooltip:hover .tooltiptext {
-    visibility: visible;
-    opacity: 1;
-  }
-
-  .star{
-    margin: 6px;
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    border: 1px solid black;
-  }
-  .star1{
-    margin: 6px;
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    border: 1px solid black;
-    background-color: goldenrod;
-  }
-#myInput{
-    border: 0px;
-    font-size: 17px;
 }

@@ -1,8 +1,8 @@
 let selectedDiv;
-if(localStorage.getItem('color')!==null) {
-  const color = localStorage.getItem('color');
-  document.getElementsByClassName('star')[1].style.background = color;
-}
+// if(localStorage.getItem('color')!==null) {
+//   const color = localStorage.getItem('color');
+//   document.getElementsByClassName('star')[1].style.background = color;
+// }
 
 document.body.onclick = function(event) {
     
