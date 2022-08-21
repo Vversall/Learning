@@ -1,65 +1,48 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Медовий магазин</title>
     <link rel="stylesheet" href="../4/css/index.css">
 </head>
 
 <body>
     <div class="wrapper">
-        <header id="header">
-            <div class="phone-number">
-               <div>
-                <img src="../4/images/kyievstar.png" alt="kyievstar.png" class="kyievstar">
-                <input type="text" value="+380 098 96 56 054" id="myInput">
-                <button onclick="myFunction()">Copy </button>
-                <a href="https://web.telegram.org/k/#521983965"><img src="../4/images/telegram.png" alt="telegram.png"
-                        class="kyievstar1"></a>
-                <img src="../4/images/viber.png" alt="viber.png" class="kyievstar1">
-                </div>
-                <div class="container">
-                    <div class="section theme">
-                        <ul>
-                            <li><button href="#" class="themetoggle">
-                                    Togle theme
-                                </button></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
+        <header id="header"> 
             <div id="menu">
                 <a href="main.html">Головна</a>
                 <a href="med.html">Мед</a>
                 <a href="pasika.html">Все для пасіки</a>
                 <a href="contacts.html">Контакти</a>
+                <div class="container">
+                    <div class="section theme">
+                        <ul>
+                            <li>
+                                <button href="#" class="themetoggle"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
         </header>
-        <div class="burger-menu ">
 
+        <div class="burger-menu ">
             <a href="#" class="burger-menu__button">
                 <span class="burger-menu__lines"></span>
             </a>
-
             <nav class="burger-menu__nav">
                 <a href="main.html" class="burger-menu__link">Головна</a>
                 <a href="med.html" class="burger-menu__link">Мед</a>
                 <a href="pasika.html" class="burger-menu__link">Все для пасіки</a>
-                <a href="contacts.html" class="burger-menu__link">Контакти</a>
-                
+                <a href="contacts.html" class="burger-menu__link">Контакти</a>               
             </nav>
-
             <div class="burger-menu__overlay"></div>
 
-            <div class="product_honey">
-                <div class="product_honey-item-container">
-                    
-                </div>
+            <div class="catalog">
             </div>
+
             <footer id="footer">
                 <div class="footer-conteiner">
                     <nav class="secondary-links">
@@ -76,17 +59,15 @@
                             </li>
                         </ul>
                     </nav>
-                    <script src="./js/idk2.js"></script>
-                    <script src="./js/favorite.js"></script>
-                    <script src="./js/togle.js"></script>
-                    <script src="./js/burger-menu.js"></script>
-                    <script src="./js/swipe.js"></script>
-                    <script src="./js/copy.js"></script>
+                    
                 </div>
-                <span class="right">2022 all rights reserved</span>
-
             </footer>
         </div>
+            <script src="./js/request_fav_tool.js"></script>
+            <script src="./js/favorite.js"></script>
+            <script src="./js/togle.js"></script>
+            <script src="./js/burger-menu.js"></script>
+            <script src="./js/swipe.js"></script>
+            <script src="./js/copy.js"></script>
 </body>
-
 </html>

@@ -1,24 +1,32 @@
-async function getResponse() {
-    let response = await fetch('https://queenlyrain.backendless.app/api/data/items')
-    let content = await response.json()
-    console.log(content)
+const requestURL = 'https://queenlyrain.backendless.app/api/data/items'
 
-    let list = document.querySelector('.product_honey-item-container')
-    let key;
+async function getRequest() {
+  let response = await fetch(requestURL)
+  let content = await response.json()
+  let catalogList = document.querySelector('.catalog')
+  let key
 
-    for (key in content) {
-        list.innerHTML += `
-        <div class="product_honey-item">
-        <div class="star"></div>
-        <span class="product_honey-type">${content[key].name}</span>
-        <div class="product_honey-about-wrapper">
-            <img src="${content[key].imageUrl}" alt="honey-1.png">
-            <span class="product_honey-price">${content[key].price} $ </span>
-            <a href="med.html">Замовити</a>
-        </div>
-    </div>
+  for (key in content) {
+    catalogList.innerHTML += `
+        <div class="catalog-item">
+              <div class="catalog-img-container">
+                <img
+                  src="${content[key].imageUrl}"
+                  class="catalog-item-img"
+                />
+                <img class="favorite_star_gold" src="./images/favoritesgold_star_favorite_6338.png" alt="">
+                <img class="favorite_star_silver" src="./images/favoritesilver_star_favorite_6337.png" alt="">
+              </div>
+              <div class="characteristics">
+                <span class="catalog-item-name">${content[key].name}</span>
+                <span class="catalog-item-price">${content[key].price} ₴</span>
+              </div>
+              <div class="subscription-about-wrapper">
+                        <a href="contacts.html">Завмовити</a>
+                    </div>
+            </div>
         `
-    content[key]
-    }
+  }
 }
-getResponse()
+
+getRequest()

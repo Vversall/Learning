@@ -1,6 +1,8 @@
-function myFunction() {
-    var copyText = document.getElementById("myInput");
-    copyText.select();
-    document.execCommand("copy");
-    alert("Copied the text: " + copyText.value);
-  }
+const number = document.querySelectorAll('.number')
+
+for (item of number) {
+  item.addEventListener('click', (event) => {
+    navigator.clipboard.writeText(event.target.innerHTML)
+    alert(Скопійовано)
+  })
+}

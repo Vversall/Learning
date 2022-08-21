@@ -1,43 +1,47 @@
+document.body.onclick = function (event) {
+  let thumbnail = event.target.closest('a')
 
-document.body.onclick = function(event) {
-    let thumbnail = event.target.closest('a');
-  
-    if (!thumbnail) return;
-    showThumbnail(thumbnail.href, thumbnail.title);
-    event.preventDefault();
+  if (!thumbnail) return
+  let showThumbnail
+  showThumbnail(thumbnail.href, thumbnail.title)
+  event.preventDefault()
+}
+
+let slideIndex = 1
+showSlides(slideIndex)
+
+function plusSlides(n) {
+  showSlides((slideIndex += n))
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n))
+}
+
+function showSlides(n) {
+  let i
+
+  const slides = document.getElementsByClassName('mySlides')
+  const dots = document.getElementsByClassName('demo')
+  const captionText = document.getElementById('caption')
+
+  if (n > slides.length) {
+    slideIndex = 1
   }
-  
-//   function showThumbnail(href, title) {
-//     largeImg.src = href;
-//     largeImg.alt = title;
-//   }
-  
-  
-  let slideIndex = 1;
-  showSlides(slideIndex);
-  
-  function plusSlides(n) {
-    showSlides(slideIndex += n);
+
+  if (n < 1) {
+    slideIndex = slides.length
   }
-  
-  function currentSlide(n) {
-    showSlides(slideIndex = n);
+
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = 'none'
   }
-  
-  function showSlides(n) {
-    let i;
-    const slides = document.getElementsByClassName("mySlides");
-    const dots = document.getElementsByClassName("demo");
-    const captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-      dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
+
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(' active', '')
   }
+
+  slides[slideIndex - 1].style.display = 'block'
+  dots[slideIndex - 1].className += ' active'
+  captionText.innerHTML = dots[slideIndex - 1].alt
+}
