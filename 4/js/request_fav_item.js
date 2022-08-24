@@ -29,6 +29,7 @@ const createCard = (item) => {
 try {
   fetch(`${baseUrl}/items`)
     .then((response) => response.json())
+
     .then((result) => {
       const gallery = document.querySelector('.catalog')
 
