@@ -5,104 +5,68 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Медовий магазин</title>
     <link rel="stylesheet" href="../4/css/index.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header id="header">
-            <nav class="secondary-links">
-                <ul class="secondary-links-menu">
-                    <li>
-                        <a href="#">Відгуки</a>
-                    </li>
-                    <li>
-                        <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/oplata_dostavka.html">Oплата та доставка</a>
-                    </li>
-                    <li>
-                        <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/main.html">Про нас</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="phone-number">
-                <img src="../4/images/kyievstar.png" alt="kyievstar.png" class="kyievstar">
-                <span class="number">+ 380 098 96 56 054 </span>
-                <a href="https://web.telegram.org/k/#521983965"><img src="../4/images/telegram.png" alt="telegram.png" class="kyievstar1"></a>
-                <img src="../4/images/viber.png" alt="viber.png" class="kyievstar1">
-            </div>
-
             <div id="menu">
-                <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/main.html">Головна</a>
-                <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/med.html">Мед</a>
-                <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/pasika.html">Все для пасіки</a>
-                <a href="#">Контакти</a>
+                <a href="main.html">Головна</a>
+                <a href="med.html">Мед</a>
+                <a href="pasika.html">Все для пасіки</a>
+                <a href="contacts.html">Контакти</a>
+                <div class="container">
+                    <div class="section theme">
+                        <ul>
+                            <li><button href="#" class="themetoggle"></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
         </header>
-        <div class="subscriptions">
-            <div class="subscriptions-item-container">
-                <div class="subscription-item">
-                    <span class="subscriptions-type">Мед</span>
-                    <span class="subscriptions-price">30$</span>
-                    <div class="subscription-about-wrapper">
-                        <img src="../4/images/honey-1.png" alt="honey-1.png">
-                        <a href="#">Завмовити</a>
-                    </div>
-                </div>
-                <div class="subscription-item">
-                    <span class="subscriptions-type">Мед</span>
-                    <span class="subscriptions-price">30$</span>
-                    <div class="subscription-about-wrapper">
-                        <img src="../4/images/honey-1.png" alt="honey-1.png">
-                        <a href="#">Замовити</a>
-                    </div>
-                </div>
-                <div class="subscription-item">
-                    <span class="subscriptions-type">Мед</span>
-                    <span class="subscriptions-price">30$</span>
-                    <div class="subscription-about-wrapper">
-                        <img src="../4/images/honey-1.png" alt="honey-1.png">
-                        <a href="#">Замовити</a>
-                    </div>
-                </div>
-                <div class="subscription-item">
-                    <span class="subscriptions-type">Мед</span>
-                    <span class="subscriptions-price">30$</span>
-                    <div class="subscription-about-wrapper">
-                        <img src="../4/images/honey-1.png" alt="honey-1.png">
-                        <a href="#">Замовити</a>
-                    </div>
-                </div>
-            </div>
+        <div class="burger-menu ">
+            <a href="#" class="burger-menu__button">
+                <span class="burger-menu__lines"></span>
+            </a>
+            <nav class="burger-menu__nav">
+                <a href="main.html" class="burger-menu__link">Головна</a>
+                <a href="med.html" class="burger-menu__link">Мед</a>
+                <a href="pasika.html" class="burger-menu__link">Все для пасіки</a>
+                <a href="contacts.html" class="burger-menu__link">Контакти</a>   
+            </nav>
+            <div class="burger-menu__overlay"></div>
+
+            <div class="catalog">   
+        </div>
         </div>
         <footer id="footer">
             <div class="footer-conteiner">
-                <nav class="secondary-links-footer">
-                    <ul class="secondary-links-menu-footer">
+                <nav class="secondary-links">
+                    <ul class="secondary-links-menu">
                         <li>
-                            <a href="#">Гарантія та повернення</a>
+                            <a href="#">Відгуки</a>
                         </li>
                         <li>
-                            <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/oplata_dostavka.html">Oплата та доставка</a>
+                            <a href="oplata_dostavka.html">Oплата та доставка</a>
                         </li>
                         <li>
-                            <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/main.html">Про нас</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакти</a>
+                            <a href="main.html">Про нас</a>
                         </li>
                     </ul>
                 </nav>
 
             </div>
-            <span class="right">all rights reserved</span>
-
         </footer>
     </div>
+        <script src="./js/request_fav_item.js"></script>
+        <script src="./js/favorite.js"></script>
+        <script src="./js/togle.js"></script>
+        <script src="./js/burger-menu.js"></script>
+        <script src="./js/swipe.js"></script>
+        <script src="./js/copy.js"></script>
+        
 </body>
-
 </html>

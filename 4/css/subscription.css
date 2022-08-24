@@ -42,42 +42,41 @@
     text-transform: uppercase;
 }
 
-.subscriptions .subscriptions-price {
+.subscriptions-price {
     font-size: 40px;
     padding: 10px 0 20px;
 }
 
-.subscriptions .subscriptions-about {
+.subscriptions-about {
     font-size: 18px;
     width: 100%;
     max-width: 270px;
     margin: 40px 0;
 }
 
-.subscriptions .subscription-about-wrapper {
+ .subscription-about-wrapper {
     display: flex;
     flex-direction: column;
     padding: 0 10%;
 }
 
-.subscriptions .subscription-about-wrapper a {
+ .subscription-about-wrapper a {
     text-align: center;
     color: rgb(0, 0, 0);
     font-size: 20px;
     line-height: 60px;
-    border: none;
     text-decoration: none;
     text-transform: uppercase;
-    border: 1px solid black;
-    border-bottom: none;
+    border: 2px solid gold;
     background-color: white;
     align-self: center;
     width: 100%;
     max-width: 230px;
+    padding: 0px 20px;
 }
 
-.subscriptions .subscription-about-wrapper a:hover {
-    background-color: #52482e;
+.subscription-about-wrapper a:hover {
+    background-color: rgb(210, 214, 91);;
 }
 
 @media screen and (max-width: 768px) {
@@ -103,7 +102,7 @@
         text-transform: uppercase;
     }
 
-    .subscriptions .subscriptions-price {
+    .subscriptions-price {
         font-size: 22px;
         padding: 0 0 10px;
     }

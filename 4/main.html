@@ -1,56 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ua">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Медовий магазин</title>
     <link rel="stylesheet" href="../4/css/index.css">
 </head>
 
 <body>
     <div class="wrapper">
         <header id="header">
-            <nav class="secondary-links">
-                <ul class="secondary-links-menu">
-                    <li>
-                        <a href="#">Відгуки</a>
-                    </li>
-                    <li>
-                        <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/oplata_dostavka.html">Oплата та
-                            доставка</a>
-                    </li>
-                    <li>
-                        <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/main.html">Про нас</a>
-                    </li>
-                    <li>
-                        <a href="#">Контакти</a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="phone-number">
-                <img src="../4/images/kyievstar.png" alt="kyievstar.png" class="kyievstar">
-                <span class="number">+ 380 098 96 56 054 </span>
-                <a href="https://web.telegram.org/k/#521983965"><img src="../4/images/telegram.png" alt="telegram.png" class="kyievstar1"></a>
-                <img src="../4/images/viber.png" alt="viber.png" class="kyievstar1">
-            </div>
-
             <div id="menu">
-                <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/main.html">Головна</a>
-                <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/med.html">Мед</a>
-                <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/pasika.html">Все для пасіки</a>
-                <a href="#">Контакти</a>
+                <a href="main.html">Головна</a>
+                <a href="med.html">Мед</a>
+                <a href="pasika.html">Все для пасіки</a>
+                <a href="contacts.html">Контакти</a>
+                <div class="container">
+                    <div class="section theme">
+                        <ul>
+                            <li>
+                                <button href="#" class="themetoggle">
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-
         </header>
+
+        <div class="burger-menu ">
+            <a href="#" class="burger-menu__button">
+                <span class="burger-menu__lines"></span></a>
+            <nav class="burger-menu__nav">
+                <a href="main.html" class="burger-menu__link">Головна</a>
+                <a href="med.html" class="burger-menu__link">Мед</a>
+                <a href="pasika.html" class="burger-menu__link">Все для пасіки</a>
+                <a href="contacts.html" class="burger-menu__link">Контакти</a>
+            </nav>
+            <div class="burger-menu__overlay"></div>
+        </div>
+
         <section class="main">
             <div class="main-text">
                 <h1 class='main-text-title'>НАТУРАЛЬНИЙ МЕД</h1>
                 <h2 class='main-text-title-small'>Мед з екологічно чистого району Житомирської області</h2>
-                <p class="main-text-paragraph">Доброго дня, вітаю на нашому сайті. Мене звати Миколa, я пасічник з девятирічним досвітом. Моя
+                <p class="main-text-paragraph">Доброго дня, вітаю на нашому сайті. Мене звати Миколa, я пасічник з
+                    девятирічним досвітом. Моя
                     пасіка знаходиться в екологічно чистому місті в далі від промислових зон (Черняхівський район
-                    Житомирська область). Виготовляю мед без яких домішок. Пасіка продукує мед двух типів: <br> травнений
+                    Житомирська область). Виготовляю мед без яких домішок. Пасіка продукує мед двух типів: <br>
+                    травнений
                     (мед зібраний з ранньої вести по цвітіння сонячника), та осіннній (з вмістом сонячника від 50 до
                     95%) </p>
                 <div class="number-wraper">
@@ -64,39 +63,108 @@
                     </div>
                     <div class="number-conteiner">
                         <h2 class='main-text-title-small'>100+</h2>
-                        <p class="main-text-paragraph">Найменувань товарів</p>
+                        <p class="main-text-paragraph">Товарів</p>
                     </div>
                 </div>
             </div>
-            <div class="mukola">
-<img src="../4/images/mukola.jpg" alt="../4/images/mukola.jpg" class="mukola-jpg">
-            </div>
         </section>
-        <footer id="footer">
-            <div class="footer-conteiner">
-                <nav class="secondary-links-footer">
-                    <ul class="secondary-links-menu-footer">
-                        <li>
-                            <a href="#">Гарантія та повернення</a>
-                        </li>
-                        <li>
-                            <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/oplata_dostavka.html">Oплата
-                                та доставка</a>
-                        </li>
-                        <li>
-                            <a href="file:///C:/Users/версаль/Documents/GitHub/Learning/4/main.html">Про нас</a>
-                        </li>
-                        <li>
-                            <a href="#">Контакти</a>
-                        </li>
-                    </ul>
-                </nav>
 
+        <div class="product_honey">            
+                <button id="myBtn">Додаткова інформація</button>
+                <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <span class="close">&times;</span>
+                        <p> Оптова ціна підається торгу (від 50 кг, в 1 л приблизно 1.45 кг), можлива співпраця на постійній основі. <br>
+                            В межах міста житомир доставка безкоштовна  протягом  7 днів,  або самовивіз, доставка в інші міста за рахунок одержувача.
+                        </p>
+                    </div>
+                </div>
+                <div class="containers">
+                    <div class="mySlides">
+                        <div class="numbertext">1 / 6</div>
+                        <img src="images/mukola.jpg" class="mySlides__photo" >
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">2 / 6</div>
+                        <img src="images/mukola1.jpg" class="mySlides__photo" >
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">3 / 6</div>
+                        <img src="images/mukola2.jpg" class="mySlides__photo" >
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/mukola3.jpg" class="mySlides__photo" >
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">4 / 6</div>
+                        <img src="images/mukola3.jpg" class="mySlides__photo" >
+                    </div>
+
+                    <div class="mySlides">
+                        <div class="numbertext">6 / 6</div>
+                        <img src="images/mukola5.jpg" class="mySlides__photo" >
+                    </div>
+                    <div class="caption-container">
+                        <p id="caption"></p>
+                    </div>
+                    <div class="row">
+                        <div class="column">
+                            <img class="demo cursor" src="images/mukola.jpg" 
+                                onclick="currentSlide(1)" alt="Mukola">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/mukola1.jpg" 
+                                onclick="currentSlide(2)" alt="Mukola">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/mukola2.jpg" 
+                                onclick="currentSlide(3)" alt="Mukola">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/mukola3.jpg" 
+                                onclick="currentSlide(4)" alt="Mukola">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/mukola3.jpg" 
+                                onclick="currentSlide(5)" alt="Mukola">
+                        </div>
+                        <div class="column">
+                            <img class="demo cursor" src="images/mukola5.jpg" 
+                                onclick="currentSlide(6)" alt="Mukola">
+                        </div>
+                    </div>
+                </div>             
             </div>
-            <span class="right">2022 all rights reserved</span>
 
-        </footer>
-    </div>
+            <footer id="footer">
+                <div class="footer-conteiner">
+                    <nav class="secondary-links">
+                        <ul class="secondary-links-menu">
+                            <li>
+                                <a href="#">Відгуки</a>
+                            </li>
+                            <li>
+                                <a href="oplata_dostavka.html">Oплата та доставка</a>
+                            </li>
+                            <li>
+                                <a href="main.html">Про нас</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </footer>
+        </div>
+            <script src="./js/togle.js"></script>
+            <script src="./js/weather.js"></script>
+            <script src="./js/burger-menu.js"></script>
+            <script src="./js/modal.js"></script>
+            <script src="./js/swipe.js"></script>
+            <script src="./js/galerry.js"></script>
 </body>
 
 </html>
